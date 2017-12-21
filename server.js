@@ -14,7 +14,7 @@
 
 
      // For Passport
-    app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true})); // session secret
+    app.use(session({ secret: 'jammin',resave: true, saveUninitialized:true})); // session secret
     app.use(passport.initialize());
     app.use(passport.session()); // persistent login sessions
 
@@ -26,7 +26,7 @@
     
 
     app.get('/', function(req, res){
-	  res.send('We BE Jammin');
+	  res.render('./home/home');
 	});
 
 
