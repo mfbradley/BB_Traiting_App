@@ -13,7 +13,16 @@ body { padding: 2em; }
 
 
 /* Shared */
+#navigation {
+  background-color: #D4AF37;
+}
+/*.navbar-brand{
 
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  width: inherit;
+}*/
 .loginBtn {
   box-sizing: border-box;
   position: relative;
