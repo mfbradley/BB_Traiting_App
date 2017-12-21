@@ -1,0 +1,12 @@
+.container-fluid {
+    width: 80%;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.btn {
+    width: 100%;
+}
