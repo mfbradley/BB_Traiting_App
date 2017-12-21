@@ -10,7 +10,8 @@ module.exports = function(sequelize, DataTypes) {
         estimatedValue: DataTypes.INTEGER,
         category: DataTypes.STRING,
         description: DataTypes.TEXT,
-        Trade_requested: []
+        Trade_requested: [],
+        image: DataTypes.Blob
     });
 
     Item.associate = function(models) {
