@@ -11,7 +11,8 @@ module.exports = function(sequelize, DataTypes) {
         category: DataTypes.STRING,
         description: DataTypes.TEXT,
         Trade_requested: [],
-        image: DataTypes.Blob
+        image: DataTypes.Blob,
+        location: DataTypes.String
     });
 
     Item.associate = function(models) {
