@@ -9,6 +9,7 @@ Get rid of stuff around the house booty in return
 
 TRADER object(like author){
     trader_id:
+    trader_password:
     contact_email:
 }
 
