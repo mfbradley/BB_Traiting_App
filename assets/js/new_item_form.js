@@ -1,13 +1,29 @@
 //client side JS
-
 $(document).ready(function() {
     $("#addItem").on("click", function(event) {
 
+        var newItem = {
+            name: $("#newItemName").val().trim(),
+            estimatedValue: $("#estValue").val().trim(),
+            category: $("#category").val().trim(),
+            description: $("#description").val().trim(),
+            // image: ("#image").val().trim(),
+            location: $("#userLocation").val().trim()
+
+        };
+        console.log(newItem);
+
+
+        $.ajax("api/items", {
+            type: "POST",
+            data: newItem
+        }).then(function() {
+            console.log("new item added!");
+            location.reload();
+        });
     });
 
 });
-
-
 
 //item object
 // module.exports = function(sequelize, DataTypes) {
