@@ -31,6 +31,7 @@
     {           
       usernameField : 'email',
       passwordField : 'password',
+      autocomplete : "password" && 'email',
       passReqToCallback : true // allows us to pass back the entire request to the callback
     },
 
