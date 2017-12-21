@@ -1,0 +1,22 @@
+.itemcardwrapper{
+  background-color: #ebebeb;
+}
+.owner-info-username{
+  fort-size: .8em;
+  font-weight: 500;
+  background-color: #ebebeb;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  color: #4a4a4a;
+}
+.owner-info-pic{
+  background-color: #ebebeb;
+  padding: 6px;
+/*  background URL( */
+background-size: cover;
+display: inline-block;
+}
+.owner-info{
+
+}
+<!---nav-->
