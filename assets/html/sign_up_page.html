@@ -22,19 +22,23 @@
             <div class="col-md-12">
                 <form id="signup" name="signup" method="post" action="/signup">
                     <div class="form-group">
-                        <input type="item" class="form-control" id="newItemName" placeholder="Email Address">
+                        <label for="email">Email Address</label>
+                        <input class="text" name="email" type="email" />
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="item" class="form-control" id="newItemName" placeholder="First Name">
+                        <label for="firstname">Firstname</label>
+                        <input name="firstname" type="text" />
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="item" class="form-control" id="newItemName" placeholder="Last Name">
+                        <label for="lastname">Lastname</label>
+                        <input name="lastname" type="text" />
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="item" class="form-control" id="newItemName" placeholder="Password">
+                        <label for="password">Password</label>
+                        <input name="password" type="password" />
                     </div>
                     <br>
                     <input class="btn btn-dark" type="submit" value="Sign Up" />
