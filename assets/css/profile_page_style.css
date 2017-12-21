@@ -1,0 +1,13 @@
+.container-fluid {
+    width: 80%;
+}
+
+#profilePic {
+    width: 80%;
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+}
