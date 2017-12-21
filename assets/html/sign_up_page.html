@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTC-8">
+    <title>Item Page</title>
+    <!--Bootstrap4 Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--CSS Link-->
+    <!--<link rel="stylesheet" href="../css/single_item_page_style.css" type="text/css" />-->
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <br>
+        <div class="row">
+            <h1>Join the Crew!</h1>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <form id="signup" name="signup" method="post" action="/signup">
+                    <div class="form-group">
+                        <input type="item" class="form-control" id="newItemName" placeholder="Email Address">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="item" class="form-control" id="newItemName" placeholder="First Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="item" class="form-control" id="newItemName" placeholder="Last Name">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="item" class="form-control" id="newItemName" placeholder="Password">
+                    </div>
+                    <br>
+                    <input class="btn btn-dark" type="submit" value="Sign Up" />
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style scoped>
+    .container-fluid {
+        width: 80%;
+    }
+
+    .btn {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+</html>
