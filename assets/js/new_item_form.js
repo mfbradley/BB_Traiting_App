@@ -1,4 +1,41 @@
-$("#addItem").on("click", function(event) {
-    var id = $(this).data('id');
-    var name = $(this).data('')
-})
+//client side JS
+
+$(document).ready(function() {
+    $("#addItem").on("click", function(event) {
+
+    });
+
+});
+
+
+
+//item object
+// module.exports = function(sequelize, DataTypes) {
+//     var Item = sequelize.define("item", {
+//         name: {
+//             type: DataTypes.STRING,
+//             allowNull: false,
+//             validate: {
+//                 len: [1]
+//             }
+//         },
+//         estimatedValue: DataTypes.INTEGER,
+//         category: DataTypes.STRING,
+//         description: DataTypes.TEXT,
+//         image: DataTypes.BLOB,
+//         location: DataTypes.STRING
+//     });
+
+//     Item.associate = function(models) {
+//         Item.belongsTo(models.user, {
+//             foreignKey: {
+//                 allowNull: false
+//             }
+//         });
+//         Item.hasMany(models.hasInterest, {
+//             onDelete: "cascade"
+//         });
+//     };
+
+//     return Item;
+// };
