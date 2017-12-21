@@ -10,8 +10,8 @@ module.exports = function(sequelize, DataTypes) {
         estimatedValue: DataTypes.INTEGER,
         category: DataTypes.STRING,
         description: DataTypes.TEXT,
-        image: DataTypes.Blob,
-        location: DataTypes.String
+        image: DataTypes.BLOB,
+        location: DataTypes.STRING
     });
 
     Item.associate = function(models) {
