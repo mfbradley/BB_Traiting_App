@@ -1,3 +1,10 @@
+/*body {
+    */
+
+/*    background-image: url("https://static1.squarespace.com/static/5344326de4b0deb58c8cef63/t/55854ce1e4b000108a4c08cf/1434720928041/ECU+Background.jpg?format=1500w");*/
+
+/*}*/
+
 .container-fluid {
     width: 80%;
 }
@@ -10,4 +17,27 @@ img {
     border-style: solid;
     border-color: black;
     width: 100%;
+}
+
+#crowsNest {
+    text-align: center;
+}
+
+#crowsNest,
+#profile,
+#bootyHeading,
+#tradeHeading,
+#savedHeading {
+    font-family: 'Chelsea Market', cursive;
+}
+
+#userInfo {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.btn {
+    background-color: black;
+    color: white;
 }
