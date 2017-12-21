@@ -1,11 +1,169 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Project2</title>
-</head>
-<body>
-<h2>Logged in</h2>
-<h5>Whoop Whoop</h5>
 
-</body>
-</html>
+<head>
+    <meta charset="UTC-8">
+    <title>User Profile</title>
+    <!--Bootstrap4 Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--CSS Link-->
+    {{!--<link rel="stylesheet" href="../css/profile_page_style.css" type="text/css" />--}}
+    <!--Font Link-->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <br>
+        <div id="crowsNest" class="row">
+            <h1>The Crow's Nest</h1>
+        </div>
+        <hr>
+        <div id="profile" class="row">
+            <h2>Profile</h2>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="col-md-3">
+                <img id="profilePic" src="https://thumbs.dreamstime.com/b/default-placeholder-profile-icon-avatar-gray-man-90197971.jpg"></img>
+            </div>
+
+            <div id="userInfo" class="col-md-4">
+                <p>Name</p>
+                <p>Username</p>
+                <p>Email</p>
+
+                <button type="button" class="btn btn-dark">Update User Info</button>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div id="bootyHeading" class="col-md-3">
+                <h2>Booty</h2>
+            </div>
+            <div class="col-md-9">
+                <a class="btn btn-dark" href="./new_item_form.html" role="button">Add New Booty</a>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div id="tradeHeading" class="col-md-4">
+                <h2>Trade Requests</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div id="savedHeading" class="col-md-4">
+                <h2>Saved Booty</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+            <div class="col-md-3">
+                <img src="http://www.thecellartrust.org/wp-content/uploads/2016/04/Product-Image-Coming-Soon.png"></img>
+            </div>
+        </div>
+        <br>
+    </div>
+    <style scoped>
+        /*body {
+    */
+
+/*    background-image: url("https://static1.squarespace.com/static/5344326de4b0deb58c8cef63/t/55854ce1e4b000108a4c08cf/1434720928041/ECU+Background.jpg?format=1500w");*/
+
+/*}*/
+
+.container-fluid {
+    width: 80%;
+}
+
+#profilePic {
+    width: 80%;
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+}
+
+#crowsNest {
+    text-align: center;
+}
+
+#crowsNest,
+#profile,
+#bootyHeading,
+#tradeHeading,
+#savedHeading {
+    font-family: 'Chelsea Market', cursive;
+}
+
+#userInfo {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.btn {
+    background-color: black;
+    color: white;
+}
+    </style>
+    </html>
