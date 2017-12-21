@@ -10,7 +10,6 @@ module.exports = function(sequelize, DataTypes) {
         estimatedValue: DataTypes.INTEGER,
         category: DataTypes.STRING,
         description: DataTypes.TEXT,
-        Trade_requested: [],
         image: DataTypes.Blob,
         location: DataTypes.String
     });
@@ -21,6 +20,10 @@ module.exports = function(sequelize, DataTypes) {
                 allowNull: false
             }
         });
+        Item.hasMany(models.hasInterest, {
+            onDelete: "cascade"
+        });
     };
+
     return Item;
 };
