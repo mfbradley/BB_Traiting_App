@@ -37,10 +37,11 @@
 
     //Routes
     var authRoute = require('./app/routes/auth.js')(app, passport);
-
-
     //load passport strategies
     require('./app/config/passport/passport.js')(passport, models.user);
+
+    //ITEM api routes (not running since file has not been finished)
+    //require("./app/routes/item-api-routes.js")(app);
 
 
     //Sync Database
@@ -48,7 +49,7 @@
      console.log('Nice! Database looks fine');
 
     }).catch(function(err) {
-     console.log(err, "Something went wrong with the Database Update!")
+     console.log(err, "Something went wrong with the Database Update!");
     });
 
 
@@ -56,7 +57,7 @@
     app.listen(8080, function(err) {
      if (!err)
       console.log("Site is live");
-     else console.log(err)
+     else console.log(err);
 
     });
     

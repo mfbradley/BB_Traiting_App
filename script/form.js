@@ -1,25 +1,25 @@
-$(function(){
-    $('.button-checkbox').each(function(){
-    	var $widget = $(this),
+$(function() {
+	$('.button-checkbox').each(function() {
+		var $widget = $(this),
 			$button = $widget.find('button'),
 			$checkbox = $widget.find('input:checkbox'),
 			color = $button.data('color'),
 			settings = {
-					on: {
-						icon: 'glyphicon glyphicon-check'
-					},
-					off: {
-						icon: 'glyphicon glyphicon-unchecked'
-					}
+				on: {
+					icon: 'glyphicon glyphicon-check'
+				},
+				off: {
+					icon: 'glyphicon glyphicon-unchecked'
+				}
 			};
 
-		$button.on('click', function () {
+		$button.on('click', function() {
 			$checkbox.prop('checked', !$checkbox.is(':checked'));
 			$checkbox.triggerHandler('change');
 			updateDisplay();
 		});
 
-		$checkbox.on('change', function () {
+		$checkbox.on('change', function() {
 			updateDisplay();
 		});
 
@@ -39,13 +39,13 @@ $(function(){
 					.removeClass('btn-default')
 					.addClass('btn-' + color + ' active');
 			}
-            else
-            {
-                $button
+			else {
+				$button
 					.removeClass('btn-' + color + ' active')
 					.addClass('btn-default');
 			}
 		}
+
 		function init() {
 			updateDisplay();
 			// Inject the icon if applicable
