@@ -41,7 +41,7 @@
     require('./app/config/passport/passport.js')(passport, models.user);
 
     //ITEM api routes (not running since file has not been finished)
-    //require("./app/routes/item-api-routes.js")(app);
+    require("./app/routes/item-api-routes.js")(app);
 
 
     //Sync Database
