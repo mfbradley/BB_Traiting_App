@@ -14,6 +14,7 @@
 <body>
     <div class="container-fluid">
 
+        <!--New Item Heading-->
         <div id="itemName" class="row">
             <h1>List New Item</h1>
         </div>
@@ -26,23 +27,55 @@
         <div class="row">
             <div class="col-md-12">
                 <form>
+                    <!--Item Name Input Field-->
                     <div class="form-group">
-                        <input id="itemName" type="item" class="form-control" id="newItemName" placeholder="Item Name">
+                        <input id="newItemName" type="item" class="form-control" placeholder="Item Name">
                     </div>
 
+                    <!--Estimated Value Input Field-->
                     <div class="form-group">
-                        <input id="imageLink" type="item" class="form-control" id="newItemName" placeholder="Link to Image">
-                    </div>
-                    <div class="form-group">
-                        <input id="category" type="item" class="form-control" id="newItemName" placeholder="Category">
-                    </div>
-                    <div class="form-group">
-                        <input id="estValue" type="item" class="form-control" id="newItemName" placeholder="Estimated Value ($)">
+                        <input id="estValue" type="item" class="form-control" placeholder="Estimated Value ($)">
                     </div>
 
+                    <!--Category Input Field-->
+                    <div class="form-group">
+                        <input id="category" type="item" class="form-control" placeholder="Category">
+                    </div>
+
+                    <!--Description of Item Field-->
+                    <div class="form-group">
+                        <input id="description" type="item" class="form-control" placeholder="Description of Item">
+                    </div>
+
+                    <!--Link to Image Input Field-->
+                    <div class="form-group">
+                        <input id="image" type="item" class="form-control" placeholder="Link to Image">
+                    </div>
+
+                    <!--Location Input Field-->
+                    <div class="form-group">
+                        <input id="userLocation" type="item" class="form-control" placeholder="Location">
+                    </div>
+
+                    <!--Add Item Input Field-->
                     <button id="addItem" type="submit" class="btn btn-outline-primary">Add Item!</button>
                 </form>
             </div>
 
         </div>
     </div>
+
+    <!--Bootstrap Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!--jQuery Script-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+    <!--JS Script-->
+    <script type="text/javascript" src="../js/new_item_form.js"></script>
+
+</body>
+
+</html>
