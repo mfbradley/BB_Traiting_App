@@ -1,32 +1,32 @@
+body {
+    background-image: url("../../images/brickwall.png");
+}
+
+#nav {
+    background-color: black;
+}
+
+.jumbotron {
+    background-image: url("https://wallpaperscraft.com/image/ship_sea_sail_storm_black_white_11161_2560x1440.jpg");
+    background-size: 100% 100%;
+}
+
 .container-fluid {
     width: auto;
+
 }
 
-#navDiv {
-    text-align: right;
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    color: white;
 }
 
-/*CARD*/
-
-.itemcardwrapper {
-    background-color: #ebebeb;
+.btn {
+    background-color: black;
+    color: white;
 }
 
-.owner-info-username {
-    fort-size: .8em;
-    font-weight: 500;
-    background-color: #ebebeb;
-    border-bottom-right-radius: 6px;
-    border-bottom-left-radius: 6px;
-    color: #4a4a4a;
+img {
+    width: auto;
+    height: 150px;
 }
-
-.owner-info-pic {
-    background-color: #ebebeb;
-    padding: 6px;
-    /*  background URL( */
-    background-size: cover;
-    display: inline-block;
-}
-
-.owner-info {}
