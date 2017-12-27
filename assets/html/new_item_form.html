@@ -1,65 +1,68 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        <meta charset="UTC-8">
-        <title>New Item Form</title>
-        <!--Bootstrap4 Link-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-        <!--CSS Link-->
-        <link rel="stylesheet" href="../css/new_item_form_style.css" type="text/css" />
+<head>
+    <meta charset="UTC-8">
+    <title>New Item Form</title>
+    <!--Bootstrap4 Link-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/new_item_form_style.css" type="text/css" />
+    <!--Font Link-->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
 
-    </head>
+</head>
 
-    <body>
-        <div class="container-fluid">
+<body>
+    <div class="container-fluid">
+        <br>
+        <!--New Item Heading-->
+        <div id="itemName" class="row">
+            <h1>Add New Booty</h1>
+        </div>
+        <div class="row">
+            <p>Ahoy there! Please fill out form below to add yer new booty to the treasure chest.</p>
+        </div>
+        <img src="http://s15.postimage.org/kozhy0eon/pajaro.gif" id="pajaro" class="piopio">
+        <br>
 
-            <!--New Item Heading-->
-            <div id="itemName" class="row">
-                <h1>List New Item</h1>
-            </div>
-            <div class="row">
-                <p>Please fill out form below to list a new item to trade.</p>
-            </div>
+        <div class="row">
+            <div class="col-md-12">
+                <form>
+                    <!--Item Name Input Field-->
+                    <div class="form-group">
+                        <input id="newItemName" type="item" class="form-control" placeholder="Item Name">
+                    </div>
 
-            <br>
+                    <!--Estimated Value Input Field-->
+                    <div class="form-group">
+                        <input id="estValue" type="item" class="form-control" placeholder="Estimated Value ($)">
+                    </div>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <form>
-                        <!--Item Name Input Field-->
-                        <div class="form-group">
-                            <input id="newItemName" type="item" class="form-control" placeholder="Item Name">
-                        </div>
+                    <!--Category Input Field-->
+                    <div class="form-group">
+                        <input id="category" type="item" class="form-control" placeholder="Category">
+                    </div>
 
-                        <!--Estimated Value Input Field-->
-                        <div class="form-group">
-                            <input id="estValue" type="item" class="form-control" placeholder="Estimated Value ($)">
-                        </div>
+                    <!--Description of Item Field-->
+                    <div class="form-group">
+                        <input id="description" type="item" class="form-control" placeholder="Description of Item">
+                    </div>
 
-                        <!--Category Input Field-->
-                        <div class="form-group">
-                            <input id="category" type="item" class="form-control" placeholder="Category">
-                        </div>
+                    <!--Link to Image Input Field-->
+                    <div class="form-group">
+                        <input id="image" type="item" class="form-control" placeholder="Link to Image">
+                    </div>
 
-                        <!--Description of Item Field-->
-                        <div class="form-group">
-                            <input id="description" type="item" class="form-control" placeholder="Description of Item">
-                        </div>
+                    <!--Location Input Field-->
+                    <div class="form-group">
+                        <input id="userLocation" type="item" class="form-control" placeholder="Location">
+                    </div>
 
-                        <!--Link to Image Input Field-->
-                        <div class="form-group">
-                            <input id="image" type="item" class="form-control" placeholder="Link to Image">
-                        </div>
-
-                        <!--Location Input Field-->
-                        <div class="form-group">
-                            <input id="userLocation" type="item" class="form-control" placeholder="Location">
-                        </div>
-
-                        <!--Add Item Input Field-->
-                        <button id="addItem" type="submit" class="btn btn-outline-primary">Add Item!</button>
-                    </form>
+                    <!--Add Item Input Field-->
+                    <button id="addItem" type="submit" class="btn btn-outline-primary">Add Item!</button>
+                </form>
+      
                 </div>
 
             </div>
