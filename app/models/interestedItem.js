@@ -6,6 +6,7 @@ module.exports = function(sequelize, DataTypes) {
     hasInterest.associate = function(models) {
         // A hasInterest can't be created without an ITEM due to the foreign key constraint
         hasInterest.belongsTo(models.item, {
+            onDelete: "cascade",
             foreignKey: {
                 allowNull: false
             }
