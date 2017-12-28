@@ -1,5 +1,17 @@
+#dl-menu {
+    z-index: 1000;
+}
+
+body {
+    background-image: url("https://www.colourbox.com/preview/2387018-worn-brown-wooden-planking-background.jpg");
+}
+
 .container-fluid {
-    width: 80%;
+    width: 90%;
+    background-color: white;
+    opacity: .95;
+    border-radius: 10px;
+
 }
 
 .btn {
@@ -14,13 +26,18 @@ h1 {
 /*CSS for Parrot Animation*/
 
 @import url(http://devsarray.com.ar/hernan/reset.css);
-body {
-    width: 100%;
-    height: 300px;
-    position: absolute;
-    overflow: hidden;
+/*body {
+    */
 
-}
+/*    width: 100%;*/
+
+/*    height: 300px;*/
+
+/*    position: absolute;*/
+
+/*    overflow: hidden;*/
+
+/*}*/
 
 .piopio {
     position: relative;
