@@ -6,19 +6,171 @@
     <title>Item Page</title>
     <!--Bootstrap4 Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!--Side Nav Links-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+
+    <!--NavBar Links-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/uikit-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/uikit.min.css">
+
     <!--CSS Link-->
     <link rel="stylesheet" href="../css/single_item_page_style.css" type="text/css" />
+    <!--Font Link-->
+    <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div id="itemName" class="row">
-            <h1>Item Name</h1>
+    <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+            <li>
+                <a href="#">Fashion</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Chinos &amp; Trousers</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Underwear</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Knits</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Blouses</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Underwear</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Children</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Boys</a></li>
+                            <li><a href="#">Girls</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Electronics</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Camera &amp; Photo</a></li>
+                    <li><a href="#">TV &amp; Home Cinema</a></li>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">PC &amp; Video Games</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Furniture</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Living Room</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Sofas &amp; Loveseats</a></li>
+                            <li><a href="#">Coffee &amp; Accent Tables</a></li>
+                            <li><a href="#">Chairs &amp; Recliners</a></li>
+                            <li><a href="#">Bookshelves</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Bedroom</a>
+                        <ul class="dl-submenu">
+                            <li>
+                                <a href="#">Beds</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Upholstered Beds</a></li>
+                                    <li><a href="#">Divans</a></li>
+                                    <li><a href="#">Metal Beds</a></li>
+                                    <li><a href="#">Storage Beds</a></li>
+                                    <li><a href="#">Wooden Beds</a></li>
+                                    <li><a href="#">Children's Beds</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bedroom Sets</a></li>
+                            <li><a href="#">Chests &amp; Dressers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home Office</a></li>
+                    <li><a href="#">Dining &amp; Bar</a></li>
+                    <li><a href="#">Patio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Jewelry &amp; Watches</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Fine Jewelry</a></li>
+                    <li><a href="#">Fashion Jewelry</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li>
+                        <a href="#">Wedding Jewelry</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Engagement Rings</a></li>
+                            <li><a href="#">Bridal Sets</a></li>
+                            <li><a href="#">Women's Wedding Bands</a></li>
+                            <li><a href="#">Men's Wedding Bands</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /dl-menuwrapper -->
 
+    <div id="nav" class="uk-section-primary uk-preserve-color">
+
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+
+                    <div class="uk-navbar-left"></div>
+
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <a href="home_page.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="welcome_page.html">Welcome</a>
+                            </li>
+                            <li>
+                                <a href="profile_page.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="new_item_form.html">Add Booty</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
         </div>
+    </div>
+    <br>
+    <br>
+    <div class="container-fluid">
         <br>
-
+        <div id="itemName" class="row">
+            <div id="itemName" class="col-md-12">
+                <h1 class="display-4">Item Name</h1>
+            </div>
+        </div>
+        <hr>
 
         <div class="row">
             <div class="col-md-8">
@@ -50,49 +202,62 @@
                 </div>
             </div>
 
-            <div class="col-md-1"></div>
-            <div class="col-md-3">
-                <div class="row">
+            <div class="col-md-4">
+                <div id="itemDescription" class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-primary">Trade</button>
+                        <h2>Description</h2>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
                     </div>
                 </div>
-                <br>
-                <div class="row">
+                <div id="user" class="row">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-primary">Save</button>
+                        <h2>User</h2>
+                        <p>Lorem ipsum dolor</p>
                     </div>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-12">
-                        <button type="button" class="btn btn-outline-primary">Message</button>
-                    </div>
+                    <br>
                 </div>
             </div>
 
         </div>
-        <br>
-        <div id="itemDescription" class="row">
-            <h3>Description</h3>
+
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" class="btn btn-dark">Trade</button>
+            </div>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-dark">Save</button>
+            </div>
+            <br>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-dark">Message</button>
+            </div>
+            <br>
         </div>
         <br>
-        <div id="user" class="row">
-            <h3>User</h3>
-        </div>
-        <div id="user" class="row">
-            <p>Lorem ipsum dolor</p>
-        </div>
-    </div>
 
+        <br>
+        <br>
 
-    </div>
-    <!--Bootstrap Scripts-->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
+        <!--Bootstrap Scripts-->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js " integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js " integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js " integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn " crossorigin="anonymous "></script>
+
+        <!--Nav Bar Scripts-->
+        <script rel="javascript" href="../../js/uikit-icons.min.js"></script>
+        <script rel="javascript" href="../../js/uikit.min.js"></script>
+
+        <!--Side Nav Links-->
+        <script src="../js/modernizr.custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../js/jquery.dlmenu.js"></script>
+        <script>
+            $(function() {
+                $('#dl-menu').dlmenu();
+            });
+        </script>
 </body>
 
 </html>

@@ -1,0 +1,22 @@
+h1 {
+    font-family: 'Chelsea Market', cursive;
+    color: white;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+}
+
+.container-fluid {
+    width: auto;
+}
+
+.jumbotron {
+    width: 100%;
+    background-image: url("../../images/bblogo.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 5%;
+    /*text-align: center*/
+}
