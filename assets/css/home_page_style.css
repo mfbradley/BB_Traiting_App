@@ -21,6 +21,10 @@ h1 {
     color: white;
 }
 
+h3 {
+    font-family: 'Chelsea Market', cursive;
+}
+
 .btn {
     background-color: black;
     color: white;
