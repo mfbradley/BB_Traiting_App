@@ -1,12 +1,32 @@
+body {
+    background-image: url("https://www.colourbox.com/preview/2387018-worn-brown-wooden-planking-background.jpg");
+}
+
 .container-fluid {
-    width: 80%;
+    width: 90%;
+    background-color: white;
+    opacity: .95;
+    border-radius: 10px;
+}
+
+#itemName {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: 'Chelsea Market', cursive;
 }
 
 img {
     height: 300px;
     width: 300px;
+    border-radius: 10px;
 }
 
 .btn {
     width: 100%;
+    background-color: black;
+    color: white;
+
 }
