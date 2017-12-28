@@ -3,28 +3,177 @@
 
 <head>
     <meta charset="UTC-8">
-    <title>New Item Form</title>
+    <title>Add New Booty</title>
     <!--Bootstrap4 Link-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!--CSS Link-->
-    <link rel="stylesheet" href="../css/new_item_form_style.css" type="text/css" />
+
+    <!--Side Nav Links-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+
+    <!--NavBar Links-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../../css/uikit-rtl.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/uikit.min.css">
+
     <!--Font Link-->
     <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
 
+    <!--CSS Link-->
+    <link rel="stylesheet" href="../css/new_item_form_style.css" type="text/css" />
 </head>
 
 <body>
+    <div id="dl-menu" class="dl-menuwrapper">
+        <button class="dl-trigger">Open Menu</button>
+        <ul class="dl-menu">
+            <li>
+                <a href="#">Fashion</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Men</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Chinos &amp; Trousers</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Underwear</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Women</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Jackets</a></li>
+                            <li><a href="#">Knits</a></li>
+                            <li><a href="#">Jeans</a></li>
+                            <li><a href="#">Dresses</a></li>
+                            <li><a href="#">Blouses</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Underwear</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Children</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Boys</a></li>
+                            <li><a href="#">Girls</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Electronics</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Camera &amp; Photo</a></li>
+                    <li><a href="#">TV &amp; Home Cinema</a></li>
+                    <li><a href="#">Phones</a></li>
+                    <li><a href="#">PC &amp; Video Games</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Furniture</a>
+                <ul class="dl-submenu">
+                    <li>
+                        <a href="#">Living Room</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Sofas &amp; Loveseats</a></li>
+                            <li><a href="#">Coffee &amp; Accent Tables</a></li>
+                            <li><a href="#">Chairs &amp; Recliners</a></li>
+                            <li><a href="#">Bookshelves</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Bedroom</a>
+                        <ul class="dl-submenu">
+                            <li>
+                                <a href="#">Beds</a>
+                                <ul class="dl-submenu">
+                                    <li><a href="#">Upholstered Beds</a></li>
+                                    <li><a href="#">Divans</a></li>
+                                    <li><a href="#">Metal Beds</a></li>
+                                    <li><a href="#">Storage Beds</a></li>
+                                    <li><a href="#">Wooden Beds</a></li>
+                                    <li><a href="#">Children's Beds</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Bedroom Sets</a></li>
+                            <li><a href="#">Chests &amp; Dressers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Home Office</a></li>
+                    <li><a href="#">Dining &amp; Bar</a></li>
+                    <li><a href="#">Patio</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Jewelry &amp; Watches</a>
+                <ul class="dl-submenu">
+                    <li><a href="#">Fine Jewelry</a></li>
+                    <li><a href="#">Fashion Jewelry</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li>
+                        <a href="#">Wedding Jewelry</a>
+                        <ul class="dl-submenu">
+                            <li><a href="#">Engagement Rings</a></li>
+                            <li><a href="#">Bridal Sets</a></li>
+                            <li><a href="#">Women's Wedding Bands</a></li>
+                            <li><a href="#">Men's Wedding Bands</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- /dl-menuwrapper -->
+
+    <div id="nav" class="uk-section-primary uk-preserve-color">
+
+        <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200">
+
+            <nav class="uk-navbar-container">
+                <div class="uk-container uk-container-expand">
+
+                    <div class="uk-navbar-left"></div>
+
+                    <div class="uk-navbar-right">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active">
+                                <a href="home_page.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="welcome_page.html">Welcome</a>
+                            </li>
+                            <li>
+                                <a href="profile_page.html">Profile</a>
+                            </li>
+                            <li>
+                                <a href="new_item_form.html">Add Booty</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </div>
+    <br>
+    <br>
     <div class="container-fluid">
         <br>
         <!--New Item Heading-->
         <div id="itemName" class="row">
             <div class="col-md-12">
-                <h1 class="display-3">Add New Booty</h1>
+                <h1 class="display-4">Add New Booty</h1>
+
+                <p>Ahoy there! Please fill out form below to add yer new booty to the treasure chest.</p>
             </div>
         </div>
-        <div class="row">
-            <p>Ahoy there! Please fill out form below to add yer new booty to the treasure chest.</p>
-        </div>
+        <hr>
         <img src="http://s15.postimage.org/kozhy0eon/pajaro.gif" id="pajaro" class="piopio">
         <br>
 
@@ -70,7 +219,8 @@
         </div>
         <br>
     </div>
-
+    <br>
+    <br>
 
     <!--Bootstrap Scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -82,6 +232,20 @@
 
     <!--JS Script-->
     <script type="text/javascript" src="../js/new_item_form.js"></script>
+
+    <!--Nav Bar Scripts-->
+    <script rel="javascript" href="../../js/uikit-icons.min.js"></script>
+    <script rel="javascript" href="../../js/uikit.min.js"></script>
+
+    <!--Side Nav Links-->
+    <script src="../js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.dlmenu.js"></script>
+    <script>
+        $(function() {
+            $('#dl-menu').dlmenu();
+        });
+    </script>
 
 </body>
 
