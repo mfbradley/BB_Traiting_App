@@ -16,7 +16,7 @@ module.exports = function(sequelize, DataTypes) {
 
   user.associate = function(models) {
     user.hasMany(models.message, { as: 'messages', foreignKey: 'authorId' });
-    user.hasMany(models.interest, { as: 'interest', foreignKey: 'userId' });
+    user.hasMany(models.hasInterests, { as: 'interested', foreignKey: 'userId' });
   };
 
   return user;

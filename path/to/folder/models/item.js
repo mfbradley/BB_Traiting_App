@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
   var message = sequelize.define('message', {
-    gab: {
+    item: {
       type: DataTypes.STRING,
       allowNull: false
     },
@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
 
   message.associate = function(models) {
     message.belongsTo(models.user, { as: 'author', foreignKey: 'authorId' });
-    message.hasMany(models.interest, { as: 'interest', foreignKey: 'messageId'});
+    message.hasMany(models.interest, { as: 'interested', foreignKey: 'messageId'});
   };
   return message;
 };
