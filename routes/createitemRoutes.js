@@ -3,7 +3,7 @@
 var express = require('express');
 var createitemsRouter = express.Router();
 var shared = require('../public/sharedFunctions.js');
-var models = require('../models');
+var models = require('../path/to/folder/models');
 
 createitemsRouter.get('/', shared.checkAuth, function(req, res) {
     res.render('createitem', {user : req.session.user});

@@ -1,6 +1,6 @@
 const express  = require("express");
 const signupRouter = express.Router();
-const models = require("../models");
+const models = require('../path/to/folder/models');
 
 signupRouter.get("/", function(req, res) {
   res.render('signup');

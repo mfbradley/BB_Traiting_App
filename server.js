@@ -7,7 +7,7 @@
     var port = process.env.PORT || 8080;
     var session = require('express-session');
     var bodyParser = require('body-parser');
-    var models = require('./models');
+    var models = require('./path/to/folder/models');
     var exphbs = require('express-handlebars');
     var indexRouter = require('./routes/indexRoutes');
     var loginRouter = require('./routes/loginRoutes');
@@ -16,8 +16,8 @@
     var interestRouter = require('./routes/interestRoutes');
     var createitemsRouter = require('./routes/createitemRoutes');
     var myitemsRouter = require('./routes/myitemRoutes');
-    var {sequelize} = require('./models')
-    var config = require('./config/config')
+    var {sequelize} = require('./path/to/folder/models')
+    var config = require('./path/to/folder/config/config')
     var path = require('path');
 
 module.exports = {

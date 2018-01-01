@@ -1,6 +1,6 @@
 var express  = require('express');
 var loginRouter = express.Router();
-var models = require("../models");
+var models = require('../path/to/folder/models');
 
 loginRouter.get("/", function(req, res) {
   res.render('login');

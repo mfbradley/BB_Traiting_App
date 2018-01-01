@@ -1,6 +1,6 @@
 var express  = require('express');
 var interestRouter = express.Router();
-var models = require("../models");
+var models = require('../path/to/folder/models');
 
 interestRouter.get("/:id", function(req, res) {
   models.message
