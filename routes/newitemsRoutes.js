@@ -11,23 +11,25 @@ newitemRouter.get('/', function(req, res) {
 //pay attention to aitem and aItem
 
 newitemRouter.post('/', function(req, res) {
-    console.log('=============')
-    if(!req.body || !req.body.aitem) {
+    if(!req.body || !req.body.newitem) {
         res.redirect('/newitem');
     }
-    
-    var aItem = models.message.build({
-        item : req.body.aitem,
+    console.log('=============')
+    var aItem = models.trade.build({
+        item : req.body.newitem,
         authorId : req.session.pirate.pirateId
     });
+    console.log(req.body)
     aItem
     .save()
     .then(function(savedItem) {
         res.redirect('/');
     })
     .catch(function(err) {
-        res.status(500).send(err);
+        console.log(err)
     });
+    //     res.status(500).send(err);
+    // });
 });
 console.log('hey' + newitemRouter)
 module.exports = newitemRouter;
