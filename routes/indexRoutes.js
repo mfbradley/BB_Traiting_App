@@ -32,7 +32,7 @@ indexRouter.get('/', shared.checkAuth, function(req, res) {
     });
 });
 
-indexRouter.post('interest/:id', function(req,res) {
+indexRouter.post('commit/:id', function(req,res) {
     var newInterest = models.interest.build({
         messageId : req.params.id,
         pirateId : req.session.pirate.pirateId

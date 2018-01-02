@@ -3,7 +3,7 @@ var itemsRouter = express.Router();
 var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
-itemsRouter.get('/', shared.checkAuth, function(req, res) {
+itemsRouter.get('/', function(req, res) {
     models.trade
     .findAll({
         where: {authorId: req.session.pirate.pirateId },
@@ -33,7 +33,7 @@ itemsRouter.get('/', shared.checkAuth, function(req, res) {
     });
 });
 
-itemsRouter.post('/:id', shared.checkAuth, function(req, res) {
+itemsRouter.post('/:id', function(req, res) {
     models.interest
     .destroy({
         where: {

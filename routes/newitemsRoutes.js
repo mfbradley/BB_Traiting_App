@@ -3,13 +3,15 @@ var newitemRouter = express.Router();
 var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
-newitemRouter.get('/', shared.checkAuth, function(req, res) {
-    res.render('newitem', {pirate : req.session.pirate});
+newitemRouter.get('/', function(req, res) {
+    console.log('hey');
+    res.render('newItem', {pirate : req.session.pirate});
 });
 
 //pay attention to aitem and aItem
 
 newitemRouter.post('/', function(req, res) {
+    console.log('=============')
     if(!req.body || !req.body.aitem) {
         res.redirect('/newitem');
     }
@@ -27,5 +29,5 @@ newitemRouter.post('/', function(req, res) {
         res.status(500).send(err);
     });
 });
-
+console.log('hey' + newitemRouter)
 module.exports = newitemRouter;
