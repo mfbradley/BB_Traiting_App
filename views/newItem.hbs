@@ -1,25 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Add a New Item</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav>
-      <ul id="menu">
-        <li class="menuItem"><a href="/">Items</a></li>
-        <li class="menuItem"><a href="/items">My Items</a></li>
-        <li class="menuItem">Create a new item</li>
-        <li class="menuItem">Logged in as {{pirate.displayName}}</li>
-        <li class="menuItem"><a href="logout">Log out</a></li>
-      </ul>
-    </nav>
-    <div id="wrapper-create">
-      <h1>Add a New Item</h1>
-      <br>
+
+<head>
+  <title>Add a New Item</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Font Link-->
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
+
+  <!--CSS Link-->
+  <link href="style.css" rel="stylesheet">
+
+  <!--Bootstrap4 Link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav justify-content-end" id="menu">
+      <li class="menuItem"><a href="/">Items</a></li>
+      <li class="menuItem"><a href="/items">My Items</a></li>
+      <li class="menuItem">Create a new item</li>
+      <li class="menuItem">Logged in as {{pirate.displayName}}</li>
+      <li class="menuItem"><a href="logout">Log out</a></li>
+    </ul>
+  </nav>
+  <div id="wrapper-create">
+    <h1>Add a New Item</h1>
+    <br>
       <form action="/newitems" action='/' method="post">
         <textarea name="newitem" id="newitem" maxlength="140" cols="50" rows="3"></textarea>
         <br>
@@ -28,3 +37,4 @@
     </div>  
   </body>
 </html>
+

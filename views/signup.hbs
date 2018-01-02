@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <nav>
-    <ul id="menu">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav justify-content-end" id="menu">
       <li class="menuItem">Items</li>
       <li class="menuItem">My Items</li>
       <li class="menuItem">Create a new item</li>
@@ -26,6 +26,7 @@
       <li class="menuItem">Sign up</li>
     </ul>
   </nav>
+
   <div class="container-fluid">
     <div id="wrapper-signup">
       <h1>Sign up</h1>
@@ -38,6 +39,7 @@
         <input type="password" name="passwordConfirm" value="{{data.passwordConfirm}}" required><br>
         <label for="displayName">Display name</label><br>
         <input type="text" name="displayName" value="{{data.displayName}}" required><br>
+        <br>
         <input class="btn" type="submit" name="signup" value="Sign up">
       </form>
       {{#errors}}
@@ -48,5 +50,10 @@
     </div>
   </div>
 </body>
+
+<!--Bootstrap Scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
 </html>
