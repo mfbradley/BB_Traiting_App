@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>Homepage</title>
     <meta charset="UTF-8">
@@ -7,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
+
   <body>
     <nav class="nav-bar">
       <ul id="menu">
@@ -18,30 +20,25 @@
       </ul>
     </nav>
     <div id="wrapper-homepage">
-    <h1>Messages</h1>
-    {{#trades}}
+      <h1>Messages</h1>
+      {{#trades}}
       <div class="message">
-      <p>
-        <form action="/interest/{{id}}" method="post">
-        <div class="line-1">
-          <span><strong>{{author.displayname}}</strong>: </span>
-          <span class="middle">{{item}}</span>
-          <input type="submit" class="btn-interest" value="interest">
-        </div>
-        </form>
-        {{createdAt}} 
-        <br>
-        {{#commit.length}}
-          <a href="/interest/{{id}}">{{commit.length}} interest</a>
-        {{/commit.length}}
-        {{^commit.length}}
-          No Interest yet.
-        {{/commit.length}}
-        <br>
-      </p>
+        <p>
+          <form action="/interest/{{id}}" method="post">
+            <div class="line-1">
+              <span><strong>{{author.displayname}}</strong>: </span>
+              <span class="middle">{{item}}</span>
+              <input type="submit" class="btn-interest" value="interest">
+            </div>
+          </form>
+          {{createdAt}}
+          <br> {{#commit.length}}
+          <a href="/interest/{{id}}">{{commit.length}} interest</a> {{/commit.length}} {{^commit.length}} No Interest yet. {{/commit.length}}
+          <br>
+        </p>
       </div>
-      <br>
-    {{/trades}}
+      <br> {{/trades}}
     </div>
   </body>
+
 </html>
