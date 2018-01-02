@@ -3,7 +3,9 @@ var loginRouter = express.Router();
 var models = require('../path/to/folder/models');
 
 loginRouter.get("/", function(req, res) {
-  res.render('login');
+  if (!req.session.pirate) {res.render('login');}
+  else {res.render('index')}
+  console.log(req)
 });
 
 loginRouter.post("/", function(req, res) {
