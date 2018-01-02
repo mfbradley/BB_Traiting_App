@@ -5,13 +5,21 @@
   <title>Homepage</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!--Font Link-->
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
+
+  <!--CSS Link-->
   <link href="style.css" rel="stylesheet">
+
+  <!--Bootstrap4 Link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 
 <body>
-  <nav class="nav-bar">
-    <ul id="menu">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav justify-content-end" id="menu">
       <li class="menuItem">Items</li>
       <li class="menuItem"><a href="/items">My Items</a></li>
       <li class="menuItem"><a href="/newitems">Create a new item</a></li>
@@ -19,26 +27,34 @@
       <li class="menuItem"><a href="/logout">Log out</a></li>
     </ul>
   </nav>
-  <div id="wrapper-homepage">
-    <h1>Messages</h1>
-    {{#trades}}
-    <div class="message">
-      <p>
-        <form action="/interest/{{id}}" method="post">
-          <div class="line-1">
-            <span><strong>{{author.displayname}}</strong>: </span>
-            <span class="middle">{{item}}</span>
-            <input type="submit" class="btn-interest" value="interest">
-          </div>
-        </form>
-        {{createdAt}}
-        <br> {{#commit.length}}
-        <a href="/interest/{{id}}">{{commit.length}} interest</a> {{/commit.length}} {{^commit.length}} No Interest yet. {{/commit.length}}
-        <br>
-      </p>
+
+  <div class="container-fluid">
+    <div id="wrapper-homepage">
+      <h1>Messages</h1>
+      {{#trades}}
+      <div class="message">
+        <p>
+          <form action="/interest/{{id}}" method="post">
+            <div class="line-1">
+              <span><strong>{{author.displayname}}</strong>: </span>
+              <span class="middle">{{item}}</span>
+              <input type="submit" class="btn-interest" value="interest">
+            </div>
+          </form>
+          {{createdAt}}
+          <br> {{#commit.length}}
+          <a href="/interest/{{id}}">{{commit.length}} interest</a> {{/commit.length}} {{^commit.length}} No Interest yet. {{/commit.length}}
+          <br>
+        </p>
+      </div>
+      <br> {{/trades}}
     </div>
-    <br> {{/trades}}
   </div>
 </body>
+
+<!--Bootstrap Scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
 </html>
