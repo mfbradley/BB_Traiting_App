@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Interest</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav>
+      <ul id="menu">
+        <li class="menuItem"><a href="/">Interest</a></li>
+        <li class="menuItem"><a href="/items">My Items</a></li>
+        <li class="menuItem"><a href="/newitem">Create a new item</a></li>
+        <li class="menuItem">Logged in as {{pirate.displayName}}</li>
+        <li class="menuItem"><a href="/logout">Log out</a></li>
+      </ul>
+    </nav>
+    <div id="wrapper-commit">
+      {{#trades}}
+      <div class="trade">
+        <p>
+          <strong>{{author.displayname}}</strong>:  {{item}}
+          <br><br>
+          {{createdAt}} 
+          <br>
+          <h1>Liked by</h1>
+          {{#interest}}
+            {{pirate.displayname}}<br>
+          {{/interest}}
+        </p>
+        </div>
+      {{/trades}}
+    </div>
+  </body>
+</html>
