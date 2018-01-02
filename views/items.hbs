@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Items</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="nav-bar">
-      <ul id="menu">
-        <li class="menuItem"><a href="/">Items</a></li>
-        <li class="menuItem">My Items</li>
-        <li class="menuItem"><a href="/newItems">Create a new item</a></li>
-        <li class="menuItem">Logged in as {{pirate.displayName}}</li>
-        <li class="menuItem"><a href="/logout">Log out</a></li>
-      </ul>
-    </nav>
+
+<head>
+  <title>My Items</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Font Link-->
+  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
+
+  <!--CSS Link-->
+  <link href="style.css" rel="stylesheet">
+
+  <!--Bootstrap4 Link-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="nav justify-content-end" id="menu">
+      <li class="menuItem"><a href="/">Items</a></li>
+      <li class="menuItem">My Items</li>
+      <li class="menuItem"><a href="/newItems">Create a new item</a></li>
+      <li class="menuItem">Logged in as {{pirate.displayName}}</li>
+      <li class="menuItem"><a href="/logout">Log out</a></li>
+    </ul>
+  </nav>
+
+  <div class="container-fluid">
     <div id="wrapper-homepage">
-    <h1>My Items</h1>
-    {{#trades}}
+      <h1>My Items</h1>
+      {{#trades}}
       <div class="trade">
         <p>
           <form action="/items/{{id}}" method="post">
@@ -29,19 +39,20 @@
               <input type="submit" class="btn-like" value="Delete">
             </div>
           </form>
-          {{createdAt}} 
-          <br>
-          {{#interest.length}}
-            <a href="/interest/{{id}}">{{interest.length}} Interest</a>
-          {{/interest.length}}
-          {{^interest.length}}
-            No interest yet.
-          {{/interest.length}}
+          {{createdAt}}
+          <br> {{#interest.length}}
+          <a href="/interest/{{id}}">{{interest.length}} Interest</a> {{/interest.length}} {{^interest.length}} No interest yet. {{/interest.length}}
           <br>
         </p>
       </div>
-      <br>
-    {{/trades}}
+      <br> {{/trades}}
     </div>
-  </body>
+  </div>
+</body>
+
+<!--Bootstrap Scripts-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+
 </html>
