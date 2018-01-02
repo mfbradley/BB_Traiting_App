@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <title>Homepage</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-  </head>
+<head>
+  <title>Homepage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
 
-  <body>
-    <nav class="nav-bar">
-      <ul id="menu">
-        <li class="menuItem">Items</li>
-        <li class="menuItem"><a href="/items">My Items</a></li>
-        <li class="menuItem"><a href="/newitems">Create a new item</a></li>
-        <li class="menuItem">Logged in as {{pirate.displayName}}</li>
-        <li class="menuItem"><a href="/logout">Log out</a></li>
-      </ul>
-    </nav>
-    <div id="wrapper-homepage">
-      <h1>Messages</h1>
-      {{#trades}}
-      <div class="message">
-        <p>
-          <form action="/interest/{{id}}" method="post">
-            <div class="line-1">
-              <span><strong>{{author.displayname}}</strong>: </span>
-              <span class="middle">{{item}}</span>
-              <input type="submit" class="btn-interest" value="interest">
-            </div>
-          </form>
-          {{createdAt}}
-          <br> {{#commit.length}}
-          <a href="/interest/{{id}}">{{commit.length}} interest</a> {{/commit.length}} {{^commit.length}} No Interest yet. {{/commit.length}}
-          <br>
-        </p>
-      </div>
-      <br> {{/trades}}
+<body>
+  <nav class="nav-bar">
+    <ul id="menu">
+      <li class="menuItem">Items</li>
+      <li class="menuItem"><a href="/items">My Items</a></li>
+      <li class="menuItem"><a href="/newitems">Create a new item</a></li>
+      <li class="menuItem">Logged in as {{pirate.displayName}}</li>
+      <li class="menuItem"><a href="/logout">Log out</a></li>
+    </ul>
+  </nav>
+  <div id="wrapper-homepage">
+    <h1>Messages</h1>
+    {{#trades}}
+    <div class="message">
+      <p>
+        <form action="/interest/{{id}}" method="post">
+          <div class="line-1">
+            <span><strong>{{author.displayname}}</strong>: </span>
+            <span class="middle">{{item}}</span>
+            <input type="submit" class="btn-interest" value="interest">
+          </div>
+        </form>
+        {{createdAt}}
+        <br> {{#commit.length}}
+        <a href="/interest/{{id}}">{{commit.length}} interest</a> {{/commit.length}} {{^commit.length}} No Interest yet. {{/commit.length}}
+        <br>
+      </p>
     </div>
-  </body>
+    <br> {{/trades}}
+  </div>
+</body>
 
 </html>
