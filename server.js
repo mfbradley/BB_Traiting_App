@@ -12,33 +12,33 @@
     var loginRouter = require('./routes/loginRoutes');
     var logoutRouter = require('./routes/logoutRoutes');
     var signupRouter = require('./routes/signupRoutes');
-    var interestRouter = require('./routes/interestRoutes');
+    var interestRouter = require('./routes/commitRoutes');
     var newitemRouter = require('./routes/newitemsRoutes');
     var itemRouter = require('./routes/itemRoutes');
-    var {sequelize} = require('./path/to/folder/models');
+    var { sequelize } = require('./path/to/folder/models');
     var config = require('./path/to/folder/config/config');
     var path = require('path');
 
-module.exports = {
-  'config': path.resolve('path/to/folder', 'config/config.json'),
-  'migrations-path': path.resolve('path/to/folder', 'migrations'),
-  'models-path': path.resolve('path/to/folder', 'models')
-};
+    module.exports = {
+        'config': path.resolve('path/to/folder', 'config/config.json'),
+        'migrations-path': path.resolve('path/to/folder', 'migrations'),
+        'models-path': path.resolve('path/to/folder', 'models')
+    };
 
     //For Handlebars
     app.engine('hbs', exphbs({ extname: '.hbs' }));
     app.set('views', './views');
     app.set('view engine', 'hbs');
-    
-            //For BodyParser
+
+    //For BodyParser
     app.use(express.static('public'));
     app.use(express.static('views'));
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(expressValidator());
     app.use(session(sessionConfig));
-    
-       // routes
+
+    // routes
     app.use('/', indexRouter);
     app.use('/home', indexRouter);
     app.use('/login', loginRouter);
@@ -47,10 +47,9 @@ module.exports = {
     app.use('/interest', interestRouter);
     app.use('/items', itemRouter);
     app.use('/createitem', newitemRouter);
-    
-    
-        app.listen(port, function() {
-    console.log('site is live: ', port);
-});
-    
+
+
+    app.listen(port, function() {
+        console.log('site is live: ', port);
+    });
     
