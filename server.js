@@ -40,7 +40,7 @@
     //load passport strategies
     require('./app/config/passport/passport.js')(passport, models.user);
 
-    //ITEM api routes (not running since file has not been finished)
+    //ITEM api routes 
     require("./app/routes/item-api-routes.js")(app);
 
 

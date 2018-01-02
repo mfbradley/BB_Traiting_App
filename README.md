@@ -55,7 +55,7 @@ LOG IN page:
 -new library/technoloy (Vue.js)
 -Polished UI/Front End
 -Folder structure MVC
--quoting standards
+-coding standards
 
 <!--Strongly Recommended-->
 -authentication

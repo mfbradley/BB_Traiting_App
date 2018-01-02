@@ -40,8 +40,5 @@ module.exports = function(app, passport) {
         res.sendFile(path.join(__dirname, "/assets/html/new_item_form.html"));
     });
 
-    // app.post("/newform", function(req, res) {
-    //     res.sendFile(path.join(__dirname, "/assets/html/new_item_form.html"));
-    // });
 
 };
