@@ -1,0 +1,53 @@
+#dl-menu {
+    z-index: 1000;
+}
+
+body {
+    background-image: url("https://www.colourbox.com/preview/2387018-worn-brown-wooden-planking-background.jpg");
+}
+
+.container {
+    width: 90%;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    opacity: .95;
+    border-radius: 10px;
+}
+
+#profilePic {
+    width: 80%;
+}
+
+h1 {
+    font-family: 'Chelsea Market', cursive;
+}
+
+img {
+    border-style: solid;
+    border-color: black;
+    width: 100%;
+}
+
+#crowsNest {
+    text-align: center;
+}
+
+#crowsNest,
+#profile,
+#bootyHeading,
+#tradeHeading,
+#savedHeading {
+    font-family: 'Chelsea Market', cursive;
+}
+
+#userInfo {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.btn {
+    background-color: black;
+    color: white;
+}
