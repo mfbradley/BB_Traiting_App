@@ -15,7 +15,7 @@
       <li class="menuItem">Items</li>
       <li class="menuItem"><a href="/items">My Items</a></li>
       <li class="menuItem"><a href="/newitems">Create a new item</a></li>
-      <li class="menuItem">Logged in as {{pirate.displayName}}</li>
+      <li class="menuItem">Logged in as {{pirate}}</li>
       <li class="menuItem"><a href="/logout">Log out</a></li>
     </ul>
   </nav>
@@ -26,8 +26,8 @@
       <p>
         <form action="/interest/{{id}}" method="post">
           <div class="line-1">
-            <span><strong>{{author.displayname}}</strong>: </span>
-            <span class="middle">{{item}}</span>
+            <span><strong>{{pirate.displayname}}</strong>: </span>
+            <span class="middle">{{items}}</span>
             <input type="submit" class="btn-interest" value="interest">
           </div>
         </form>

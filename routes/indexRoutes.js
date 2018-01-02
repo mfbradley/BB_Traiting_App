@@ -3,7 +3,8 @@ var indexRouter = express.Router();
 var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
-indexRouter.get('/', shared.checkAuth, function(req, res) {
+indexRouter.get('/', function(req, res) {
+    console.log('==============111')
     models.trade
     .findAll({
         order: [[ 'createdAt', 'DESC']],
