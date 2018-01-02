@@ -1,41 +1,44 @@
-var express  = require('express');
+var express = require('express');
 var indexRouter = express.Router();
 var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
-indexRouter.get('/', shared.checkAuth, function(req, res) {
+indexRouter.get('/', function(req, res) {
+    console.log('==============111')
     models.trade
-    .findAll({
-        order: [[ 'createdAt', 'DESC']],
-        include: [
-            {
-                model: models.pirate,
-                as: "author"
-            },
-            {
-                model: models.interest,
-                as: "commit",
-                include: {
+        .findAll({
+            order: [['createdAt', 'DESC']],
+            include: [
+                {
                     model: models.pirate,
-                    as: 'pirate'
-                }
+                    as: "author"
+            },
+                {
+                    model: models.interest,
+                    as: "commit",
+                    include: {
+                        model: models.pirate,
+                        as: 'pirate'
+                    }
             }
         ]
-    })
-    .then(function(foundTrades) {
-        console.log(foundTrades);
-        res.render('index', { trades: foundTrades,
-                    pirate: req.session.pirate });
-    })
-    .catch(function(err) {
-        res.status(500).send(err);
-    });
+        })
+        .then(function(foundTrades) {
+            console.log(foundTrades);
+            res.render('index', {
+                trades: foundTrades,
+                pirate: req.session.pirate
+            });
+        })
+        .catch(function(err) {
+            res.status(500).send(err);
+        });
 });
 
-indexRouter.post('interest/:id', function(req,res) {
+indexRouter.post('commit/:id', function(req, res) {
     var newInterest = models.interest.build({
-        messageId : req.params.id,
-        pirateId : req.session.pirate.pirateId
+        tradeId: req.params.id,
+        pirateId: req.session.pirate.pirateId
     });
     newInterest
         .save()

@@ -3,11 +3,14 @@ var loginRouter = express.Router();
 var models = require('../path/to/folder/models');
 
 loginRouter.get("/", function(req, res) {
-  res.render('login');
+  if (!req.session.pirate) {res.render('login');}
+  else {res.render('index')}
 });
 
 loginRouter.post("/", function(req, res) {
-  if (!req.body || !req.body.piratename || !req.body.password) {
+  if (!req.body || !req.body.username || !req.body.password) {
+    console.log(req.body.piratename)
+    console.log(req.body.password)
     return res.redirect("login");
   }
 
@@ -17,7 +20,7 @@ loginRouter.post("/", function(req, res) {
   models.pirate
   .findOne({
       where: {
-        piratename: requestingPirate.piratename,
+        piratename: requestingPirate.username,
         password: requestingPirate.password
       }
     }).then(function (pirate) {
@@ -32,6 +35,7 @@ loginRouter.post("/", function(req, res) {
         console.log("nope");
         return res.redirect("login");
       }
+
     });
 });
 

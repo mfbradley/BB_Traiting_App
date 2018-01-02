@@ -12,7 +12,7 @@
     var loginRouter = require('./routes/loginRoutes');
     var logoutRouter = require('./routes/logoutRoutes');
     var signupRouter = require('./routes/signupRoutes');
-    var interestRouter = require('./routes/interestRoutes');
+    var interestRouter = require('./routes/commitRoutes');
     var newitemRouter = require('./routes/newitemsRoutes');
     var itemRouter = require('./routes/itemRoutes');
     var {sequelize} = require('./path/to/folder/models');
@@ -46,11 +46,10 @@ module.exports = {
     app.use('/signup', signupRouter);
     app.use('/interest', interestRouter);
     app.use('/items', itemRouter);
-    app.use('/createitem', newitemRouter);
+    app.use('/newitems', newitemRouter);
+    console.log(newitemRouter)
     
     
         app.listen(port, function() {
     console.log('site is live: ', port);
 });
-    
-    
