@@ -2,7 +2,7 @@ var express = require('express');
 var commitRouter = express.Router();
 var models = require('../path/to/folder/models');
 
-commitRouter.get('/:id', function(req, res) {
+commitRouter.get('/:id', shared.checkAuth,function(req, res) {
     models.trade
     .findOne({
         where: { id: req.params.id },
