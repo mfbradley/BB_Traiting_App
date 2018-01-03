@@ -24,7 +24,7 @@ itemsRouter.get('/', function(req, res) {
         ]
     })
     .then(function(foundTrades) {
-        console.log(foundTrades);
+        // console.log(foundTrades);
         res.render('items', { trades: foundTrades,
             pirate: req.session.pirate });
     })

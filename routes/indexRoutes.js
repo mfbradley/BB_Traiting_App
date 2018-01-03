@@ -35,7 +35,7 @@ indexRouter.get('/', function(req, res) {
         });
 });
 
-indexRouter.post('commit/:id', function(req, res) {
+indexRouter.post('/', function(req, res) {
     var newInterest = models.interest.build({
         tradeId: req.params.id,
         pirateId: req.session.pirate.pirateId

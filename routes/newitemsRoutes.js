@@ -19,14 +19,14 @@ newitemRouter.post('/', function(req, res) {
         item : req.body.newitem,
         authorId : req.session.pirate.pirateId
     });
-    console.log(req.body)
+    // console.log(req.body)
     aItem
     .save()
     .then(function(savedItem) {
         res.redirect('/');
     })
     .catch(function(err) {
-        console.log(err)
+        // console.log(err)
     });
     //     res.status(500).send(err);
     // });
