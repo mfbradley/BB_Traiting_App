@@ -21,7 +21,7 @@ commitRouter.get('/:id', function(req, res) {
             }
         ]
         })
-        console.log(commitRouter)
+    console.log(commitRouter)
         .then(function(foundCommit) {
             res.render('commit', {
                 trades: foundCommit,
