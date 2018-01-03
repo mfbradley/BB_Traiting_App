@@ -34,10 +34,7 @@ commitRouter.get('/:id', function(req, res) {
 });
 
 commitRouter.post('/:id', function(req, res) {
-    res.redirect("items");
+    res.redirect("/items");
 });
-    // .then(function(foundLikes) {
-    //   console.log(foundLikes);
-    //   res.render("likes", { messages: foundLikes,
-    //                         user: req.session.user });
+
 module.exports = commitRouter;
