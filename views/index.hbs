@@ -21,6 +21,8 @@
   <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <ul class="nav justify-content-end" id="menu">
+      <li>Black Beard Traiting</li>
+      <hr>
       <li class="menuItem">Items</li>
       <li class="menuItem"><a href="/items">My Items</a></li>
       <li class="menuItem"><a href="/newitems">Create a new item</a></li>
@@ -37,9 +39,11 @@
       <!--Heading with Brief Instructions-->
       <div class="row">
         <div class="col-md-12">
-          <h1 class="display-3" style="font-family: 'Chelsea Market', cursive;">Available Booty!</h1>
+          <h1 class="display-4" style="font-family: 'Chelsea Market', cursive;">Available Booty!</h1>
+          <p>Browse through the items below and see what treasure awaits! Click "interest" button to propose a trade. </p>
         </div>
       </div>
+
       <hr> {{#trades}}
 
       <!--Div created for each item that is added to the database-->
@@ -49,7 +53,7 @@
             <div class="line-1">
               <span><strong>{{author.displayname}}</strong>: </span>
               <span class="middle">{{item}}</span>
-              <input type="submit" class="btn-interest" value="interest">
+              <input type="submit" class="btn-interest btn" value="interest">
             </div>
           </form>
           {{createdAt}}
