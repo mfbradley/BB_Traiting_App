@@ -47,7 +47,6 @@ module.exports = {
     app.use('/interest', interestRouter);
     app.use('/items', itemRouter);
     app.use('/newitems', newitemRouter);
-    console.log(newitemRouter)
     
     
         app.listen(port, function() {

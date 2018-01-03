@@ -9,8 +9,8 @@ loginRouter.get("/", function(req, res) {
 
 loginRouter.post("/", function(req, res) {
   if (!req.body || !req.body.username || !req.body.password) {
-    console.log(req.body.piratename)
-    console.log(req.body.password)
+    // console.log(req.body.piratename)
+    // console.log(req.body.password)
     return res.redirect("login");
   }
 
