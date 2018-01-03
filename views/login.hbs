@@ -6,14 +6,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--Font Link-->
-  <link href="https://fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
-
   <!--CSS Link-->
   <link href="style.css" rel="stylesheet">
 
   <!--Bootstrap4 Link-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <!--Font Link-->
+  <link href="//fonts.googleapis.com/css?family=Chelsea+Market|Roboto" rel="stylesheet">
+
 </head>
 
 <body>
@@ -29,25 +30,40 @@
 
   <div class="container-fluid">
     <div id="wrapper-login">
-      <h1>Login</h1>
-      <form action="/login" method="post">
-        <label for="piratename">Piratename</label><br>
-        <input type="text" name="username" value="" autofocus><br>
-        <label for="password1">Password</label><br>
-        <input type="password" name="password"><br>
-        <br>
-        <input class="btn" type="submit" name="login" value="Login">
-      </form>
+      <br>
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-3" style="font-family: 'Chelsea Market', cursive;">Log In</h1>
+          <p>Enter your user credentials below and climb aboard!</p>
+        </div>
+      </div>
+      <hr>
+
+      <!--Login Form-->
+      <div class="row logInForm">
+        <div class="col-md-12">
+          <form action="/login" method="post">
+
+            <div class="form-group">
+              <label for="piratename">Piratename</label><br>
+              <input type="text" name="username" value="" autofocus><br>
+            </div>
+
+            <label for="password1">Password</label><br>
+            <input type="password" name="password"><br>
+            <br>
+
+            <input class="btn" type="submit" name="login" value="Login">
+            <br><br>
+          </form>
+        </div>
+      </div>
+
+
     </div>
-<<<<<<< HEAD
-    <style>
-    #wrapper-login{
-    background-color: black;
-  }
-    </style>
-  </body>
-=======
   </div>
+
+
 </body>
 
 <!--Bootstrap Scripts-->
@@ -55,5 +71,4 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
 
->>>>>>> 969016a5ea0fe5272f9c4e66d6beb09779c65b11
 </html>
