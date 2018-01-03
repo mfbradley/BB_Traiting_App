@@ -1,6 +1,7 @@
 h1,
 p,
-.logInForm {
+.logInForm,
+.signUpForm {
     font-family: 'Chelsea Market', cursive;
     text-align: center;
 }
