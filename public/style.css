@@ -30,9 +30,15 @@ body {
     background-color: black;
     color: white;
     opacity: .90;
+    font-family: 'Chelsea Market', cursive;
 }
 
 .menuItem {
     padding-left: 30px;
 
+}
+
+#newitem {
+    width: 100%;
+    text-align: center;
 }
