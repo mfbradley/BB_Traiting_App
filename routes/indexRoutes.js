@@ -4,7 +4,6 @@ var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
 indexRouter.get('/', function(req, res) {
-    console.log('==============111')
     models.trade
         .findAll({
             order: [['createdAt', 'DESC']],
@@ -24,7 +23,6 @@ indexRouter.get('/', function(req, res) {
         ]
         })
         .then(function(foundTrades) {
-            console.log(foundTrades);
             res.render('index', {
                 trades: foundTrades,
                 pirate: req.session.pirate
@@ -35,7 +33,7 @@ indexRouter.get('/', function(req, res) {
         });
 });
 
-indexRouter.post('commit/:id', function(req, res) {
+indexRouter.post('/', function(req, res) {
     var newInterest = models.interest.build({
         tradeId: req.params.id,
         pirateId: req.session.pirate.pirateId

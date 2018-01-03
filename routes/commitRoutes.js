@@ -1,7 +1,7 @@
 var express = require('express');
 var commitRouter = express.Router();
 var models = require('../path/to/folder/models');
-
+console.log('idk')
 commitRouter.get('/:id', function(req, res) {
     models.trade
         .findOne({
@@ -21,8 +21,8 @@ commitRouter.get('/:id', function(req, res) {
             }
         ]
         })
+        console.log(commitRouter)
         .then(function(foundCommit) {
-            console.log(foundCommit);
             res.render('commit', {
                 trades: foundCommit,
                 pirate: req.session.pirate
@@ -33,4 +33,11 @@ commitRouter.get('/:id', function(req, res) {
         });
 });
 
+commitRouter.post('/:id', function(req, res) {
+    res.redirect("items");
+});
+    // .then(function(foundLikes) {
+    //   console.log(foundLikes);
+    //   res.render("likes", { messages: foundLikes,
+    //                         user: req.session.user });
 module.exports = commitRouter;

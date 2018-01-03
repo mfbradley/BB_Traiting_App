@@ -4,7 +4,7 @@ var shared = require('../public/sharedFunctions.js');
 var models = require('../path/to/folder/models');
 
 newitemRouter.get('/', function(req, res) {
-    console.log('hey');
+    // console.log('hey');
     res.render('newItem', {pirate : req.session.pirate});
 });
 
@@ -14,22 +14,22 @@ newitemRouter.post('/', function(req, res) {
     if(!req.body || !req.body.newitem) {
         res.redirect('/newitem');
     }
-    console.log('=============')
+    // console.log('=============')
     var aItem = models.trade.build({
         item : req.body.newitem,
         authorId : req.session.pirate.pirateId
     });
-    console.log(req.body)
+    // console.log(req.body)
     aItem
     .save()
     .then(function(savedItem) {
         res.redirect('/');
     })
     .catch(function(err) {
-        console.log(err)
+        // console.log(err)
     });
     //     res.status(500).send(err);
     // });
 });
-console.log('hey' + newitemRouter)
+// console.log('hey' + newitemRouter)
 module.exports = newitemRouter;

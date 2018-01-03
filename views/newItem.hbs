@@ -21,6 +21,8 @@
   <!--NavBar-->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <ul class="nav justify-content-end" id="menu">
+      <li>Black Beard Traiting</li>
+      <hr>
       <li class="menuItem"><a href="/">Items</a></li>
       <li class="menuItem"><a href="/items">My Items</a></li>
       <li class="menuItem">Create a new item</li>
@@ -41,13 +43,19 @@
         </div>
       </div>
       <hr>
+      <img src="http://s15.postimage.org/kozhy0eon/pajaro.gif" id="pajaro" class="piopio">
       <br>
+      <br>
+
+      <!--New Item input field-->
       <div class="row">
         <div class="col-md-12">
           <form action="/newitems" method="post">
             <textarea name="newitem" id="newitem" maxlength="140" cols="50" rows="3"></textarea>
             <br>
             <br>
+
+            <!--Save Item Button-->
             <input class="btn saveItem" type="submit" name="saveitem" value="Saveitem">
             <br><br>
           </form>
@@ -56,6 +64,9 @@
     </div>
   </div>
 </body>
+
+<!--jQuery Script-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
 <!--Bootstrap Scripts-->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
