@@ -34,7 +34,7 @@ commitRouter.get('/:id', function(req, res) {
 });
 
 commitRouter.post('/:id', function(req, res) {
-    res.render("newitems");
+    res.redirect("/items");
 });
 
 module.exports = commitRouter;

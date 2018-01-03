@@ -46,7 +46,7 @@ module.exports = {
     app.use('/signup', signupRouter);
     app.use('/interest', interestRouter);
     app.use('/items', itemRouter);
-    app.use('/newitems', newitemRouter);
+    app.use('/newItem', newitemRouter);
     
     
         app.listen(port, function() {
